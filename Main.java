@@ -1,3 +1,4 @@
+import java.util.Scanner;
 class Person {
     public String firstName;
     public String lastName;
@@ -82,5 +83,43 @@ public class Main {
         person.eat();
         student.eat();
         student.eat("pizza");
+     String str ="shrut";
+     String str1 ="AJMERA";
+     String str2 ="male";
+     String str3 ="Lets grow together";
+        System.out.println(str.toUpperCase());
+        System.out.println(str1.toLowerCase()); 
+        System.out.println(str2.replace('m','M'));
+        System.out.println(str3.length());
+        System.out.println(str3.charAt(2));
+        System.out.println(str3.indexOf('e'));
+        String str4 =" Thank You For This Opportunity ";
+      System.out.println(str4);
+      System.out.println(str4.trim());
+      char ch[]={'s','h','r','u','t'};
+      String str5 = new String(ch);
+      System.out.println(str5.toUpperCase());
+      StringBuilder sb =new StringBuilder("indore city");
+      sb.reverse();
+      sb.delete(2,5);
+      sb.insert(3,"....");
+      sb.append("clean city").reverse();
+      System.out.println(sb);
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter rollno.");
+      short rollNo=sc.nextShort();
+      System.out.println("Roll No. is"+ rollNo);
+      System.out.println("Enter contactNo.");
+      Long contactNo=sc.nextLong();
+      System.out.println("Contact No. is"+contactNo);
+      System.out.println("Enter twelth percentage");
+      Float twelthPer =sc.nextFloat();
+      System.out.println("Twelth Percentage is"+ twelthPer);
+      System.out.println("Enter Age");
+      Byte age = sc.nextByte();
+      System.out.println("Age is"+age);
+      System.out.println("Are you an Intern?");
+      Boolean status=sc.nextBoolean();
+      System.out.println("Status"+status);
     }
 }
